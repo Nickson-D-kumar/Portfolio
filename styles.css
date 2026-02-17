@@ -271,9 +271,10 @@ section {
 }
 
 .skill-bar {
-  height: 8px;
+  height: 9px;
   background: #222;
   border-radius: 10px;
+  width: 400px;
 }
 
 .skill-fill {
@@ -289,6 +290,15 @@ section {
 .skill p {
   margin-bottom: 8px;
   font-size: 15px;
+}
+.skill-set1, .skill-set2 {
+  display: inline-block;
+  width: 45%;
+  padding: 0 20px;
+}
+.skill-set2 {
+  margin-left: 50px;
+  margin-top: 0%;
 }
 
 /* Contact */
