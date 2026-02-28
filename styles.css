@@ -203,9 +203,9 @@ section {
   gap: 50px;
   align-items: center;
 }
-.education-info {
+/* .education-info {
   max-width: 500px;
-}
+} */
 .education-item
 {
   margin-bottom: 30px;
