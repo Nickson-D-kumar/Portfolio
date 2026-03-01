@@ -24,6 +24,7 @@ body {
   background: #0a0a0a73;
   opacity: 0.9;
   font-size: 17px;
+max-width: 1200px;
 }
 
 .navbar a {
@@ -42,6 +43,7 @@ body {
 .hero {
   height: 100vh;
   text-align: center;
+width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -147,6 +149,7 @@ section {
   display: flex;
   gap: 40px;
   align-items: center;
+width: 100%;
 }
 
 
@@ -187,6 +190,9 @@ section {
 }
 
 /* Education */
+. education {
+width: 100%;
+}
 .education h2{
   font-size: 40px;
   margin-bottom: 40px;
