@@ -1,275 +1,326 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nickson D Kumar | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-<link rel="canonical" href="https://nicksondkumar.netlify.app/">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <script src="script.js" defer></script>
+  <title>Nickson D Kumar — Creative Developer</title>
+  <link rel="canonical" href="https://nicksondkumar.netlify.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">Portfolio</div>
-    <nav>
-      <a href="#home">Home</a>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <a href="#home" class="nav-logo">NDK<span>©</span></a>
+    <div class="nav-center">
+      <span class="nav-status"><span class="status-dot"></span>Available for work</span>
+    </div>
+    <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
+      <a href="#projects">Work</a>
       <a href="#contact">Contact</a>
-    </nav>
-  </header>
+      <a href="Nickson_Kumar_D_General_Resume.pdf" target="_blank" class="nav-hire">Hire Me ↗</a>
+    </div>
+  </nav>
 
-  <!-- Hero Section -->
+  <!-- ═══ HERO ═══ -->
   <section id="home" class="hero">
-    <h3 style="font-size: 40px;">Hello, I'm</h3>
-    <h1>Nickson D.Kumar</h1>
-    <p class="abs">
-  I'm a <span id="typing-text"></span>
-    </p>
-    <p style="font-size: 23px; margin-top: 10px;">Crafting beautiful digital experiences with code and creativity</p>
-    <div class="hero-buttons">
-      <button  onclick="location.href='#projects'" class="btn-primary" style="height: 40px; width: 130px; border-radius: 35px;">View My Work</button>
-      <button onclick="location.href='#contact'" class="btn-outline" style="height: 40px; width: 130px; border-radius: 35px;">Get In Touch</button>
+
+    <div class="hero-blob blob1"></div>
+    <div class="hero-blob blob2"></div>
+    <div class="hero-blob blob3"></div>
+
+    <div class="hero-tag-row">
+      <span class="pill pill-green">UI/UX Designer</span>
+      <span class="pill pill-pink">Web Developer</span>
+      <span class="pill pill-orange">CSE Student</span>
     </div>
+
+    <div class="hero-headline-wrap">
+      <div class="hero-line line1">
+        <span class="hl-big">NICKSON</span>
+      </div>
+      <div class="hero-line line2">
+        <div class="hero-photo-bubble">
+          <img src="image.jpeg" alt="Nickson">
+        </div>
+        <span class="hl-big outline">D.</span>
+        <span class="hl-big">KUMAR</span>
+      </div>
+    </div>
+
+    <div class="hero-foot">
+      <div class="hero-desc">
+        <p>Crafting <em>beautiful</em> digital<br>experiences since 2024.</p>
+        <div class="typed-line">
+          <span class="typed-prefix">→</span>
+          <span id="typing-text"></span>
+        </div>
+      </div>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn-big">See my work</a>
+        <a href="#contact" class="btn-ghost">Say hello ↓</a>
+      </div>
+      <div class="hero-counter-col">
+        <div class="counter-item">
+          <span class="counter-n">3+</span>
+          <span class="counter-l">Projects</span>
+        </div>
+        <div class="counter-item">
+          <span class="counter-n">5+</span>
+          <span class="counter-l">Skills</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- floating stickers -->
+    <div class="sticker s1">✦ Code</div>
+    <div class="sticker s2">Design ✦</div>
+    <div class="sticker s3">↗</div>
+
   </section>
 
-  <!-- About -->
+  <!-- MARQUEE -->
+  <div class="marquee-band">
+    <div class="marquee-inner">
+      <span>HTML</span><b>✦</b><span>CSS</span><b>✦</b><span>JavaScript</span><b>✦</b>
+      <span>Figma</span><b>✦</b><span>Adobe XD</span><b>✦</b><span>C++</span><b>✦</b>
+      <span>Java</span><b>✦</b><span>Bootstrap</span><b>✦</b><span>UI Design</span><b>✦</b>
+      <span>HTML</span><b>✦</b><span>CSS</span><b>✦</b><span>JavaScript</span><b>✦</b>
+      <span>Figma</span><b>✦</b><span>Adobe XD</span><b>✦</b><span>C++</span><b>✦</b>
+      <span>Java</span><b>✦</b><span>Bootstrap</span><b>✦</b><span>UI Design</span><b>✦</b>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
   <section id="about" class="about">
-    <h2>About Me</h2>
-    <div class="about-container">
-      <img src="image.jpeg" alt="profile">
-      <div class="about-text">
-        <p><br><br>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My journey into technology began with curiosity—wondering how apps, websites, and systems actually work behind the screen. What started as simple experimentation soon became a passion for building things with code. I’m Nick, a Computer Science and Engineering student who enjoys solving problems, learning through hands-on projects, and turning ideas into functional digital experiences. Every challenge I face pushes me to think differently and improve both my technical and logical skills.
-<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-Over time, I’ve grown to see programming as more than just writing code—it’s a creative process that blends logic, design, and innovation. From exploring data structures to developing web-based projects, I’m constantly learning and adapting to new technologies. I believe growth comes from curiosity, consistency, and collaboration, and I’m excited to continue building solutions that are meaningful, efficient, and impactful as I move forward in my journey as a developer.
-        </p><center>
-        <button onclick="window.open('Nickson_Kumar_D_General_Resume.pdf', '_blank')">Curriculam Vitae</button>
-</center>
+    <div class="about-label">/ About me</div>
+
+    <div class="about-mag-grid">
+
+      <!-- big photo card -->
+      <div class="about-photo-card mag-card">
+        <img src="image.jpeg" alt="Nickson D Kumar">
+        <div class="photo-overlay-text">
+          <span>Thoothukudi, TN</span>
+          <span>CS&E '28</span>
+        </div>
+        <div class="photo-gradient"></div>
       </div>
+
+      <!-- headline card -->
+      <div class="about-headline-card mag-card card-purple">
+        <h2>Building at the<br><em>intersection</em><br>of code &amp; design.</h2>
+        <p>Every pixel intentional. Every line of code purposeful.</p>
+      </div>
+
+      <!-- bio card -->
+      <div class="about-bio-card mag-card">
+        <p>My journey into technology began with curiosity — wondering how apps and systems work behind the screen. What started as experimentation became a passion for building beautiful digital things.</p>
+        <p>I see programming as a creative discipline that blends logic, design, and innovation. Every challenge pushes me to think differently.</p>
+        <a href="Nickson_Kumar_D_General_Resume.pdf" target="_blank" class="about-cv-btn">Download CV ↗</a>
+      </div>
+
+      <!-- stats card -->
+      <div class="about-stats-card mag-card card-lime">
+        <div class="stat-big">3+</div>
+        <div class="stat-big-label">Projects shipped</div>
+        <hr class="stat-divider">
+        <div class="stat-big secondary">2024</div>
+        <div class="stat-big-label">Started coding</div>
+      </div>
+
+      <!-- edu card -->
+      <div class="about-edu-card mag-card">
+        <div class="edu-card-label">Education</div>
+        <div class="edu-row">
+          <span class="edu-yr">2024–28</span>
+          <div>
+            <strong>B.E. CSE</strong>
+            <small>National Engineering College, Kovilpatti</small>
+          </div>
+        </div>
+        <div class="edu-row">
+          <span class="edu-yr">2022–24</span>
+          <div>
+            <strong>Higher Secondary</strong>
+            <small>Govt. HSS, Sernthamangalam</small>
+          </div>
+        </div>
+        <div class="edu-row">
+          <span class="edu-yr">2021–22</span>
+          <div>
+            <strong>Secondary</strong>
+            <small>Success Matric HSS, Thirumalapuram</small>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <div class="education-container">
-      <div class="education-item">
-        <h3>Bachelor of Engineering in Computer Science and Engineering</h3>
-        <p>2024 - 2028</p>
-        <p>National Engineering College, Kovilpatti</p>
-      </div>
-      <div class="education-item">
-        <h3>Higher Secondary Education</h3>
-        <p>2022 - 2024</p>
-        <p>Govt. Higher Secondary School, Sernthamangalam</p>
-      </div>
-      <div class="education-item">
-        <h3>Secondary Education</h3>
-        <p>2021 - 2022</p>
-        <p>Success Martic Higher Secondary School, Thirumalapuram</p>
-      </div>
-    </section>
-  <!-- Projects -->
+
+  <!-- ═══ PROJECTS ═══ -->
   <section id="projects" class="projects">
-    <h2>My Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-  <img src="https://i.pinimg.com/1200x/86/8f/2f/868f2f3b2cde0607395b9479221db6ab.jpg" alt="Project">
-
-  <div class="overlay">
-    <h3 style="text-align: center">Tour Booking Management System</h3>
-    <p>A responsive Tour Booking Management Website built with HTML, CSS, and JavaScript. It allows users to browse tour packages, view details, and make bookings with ease. Features include interactive forms, smooth navigation, and a clean, modern UI for managing tour reservations.</p>
-    <div class="icon-links">
-      <a href="https://github.com/Nickson-D-kumar/Tour-Booking-Management-System" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-
-      <a href="https://nickson-d-kumar.github.io/Tour-Booking-Management-System/" target="_blank">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
+    <div class="proj-header-row">
+      <div class="proj-label">/ Selected Work</div>
+      <h2 class="proj-big-title">Things I've <em>built</em></h2>
     </div>
-  </div>
-</div>
-<div class="project-card">
-  <img src="https://i.pinimg.com/1200x/f4/94/80/f4948087c178b310f7476f871791ed07.jpg" alt="Project">
 
-  <div class="overlay">
-    <h3>Street Food Finder</h3>
-    <p>We made a webpage for the use of street food vendors and for the peoples who are not able to find the good street food stall they can find the stall by location or else by food name. We use HTML,CSS,JavaScript for the following webpage.</p>
-    <div class="icon-links">
-      <a href="https://github.com/Nickson-D-kumar/Street-Food-Finder" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
+    <div class="proj-mag-grid">
 
-      <a href="https://nickson-d-kumar.github.io/Street-Food-Finder/" target="_blank">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
+      <div class="proj-card pc-big card-gradient-blue">
+        <div class="pc-img">
+          <img src="https://i.pinimg.com/1200x/86/8f/2f/868f2f3b2cde0607395b9479221db6ab.jpg" alt="Tour Booking">
+        </div>
+        <div class="pc-content">
+          <span class="pc-num">01</span>
+          <h3>Tour Booking<br>Management System</h3>
+          <p>Responsive booking platform with interactive forms and smooth navigation.</p>
+          <div class="pc-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://github.com/Nickson-D-kumar/Tour-Booking-Management-System" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://nickson-d-kumar.github.io/Tour-Booking-Management-System/" target="_blank">Live ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card pc-tall card-gradient-pink">
+        <div class="pc-img">
+          <img src="https://i.pinimg.com/1200x/f4/94/80/f4948087c178b310f7476f871791ed07.jpg" alt="Street Food">
+        </div>
+        <div class="pc-content">
+          <span class="pc-num">02</span>
+          <h3>Street Food<br>Finder</h3>
+          <p>Discover street vendors by location or cuisine name.</p>
+          <div class="pc-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://github.com/Nickson-D-kumar/Street-Food-Finder" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://nickson-d-kumar.github.io/Street-Food-Finder/" target="_blank">Live ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="proj-card pc-square card-gradient-orange">
+        <div class="pc-img">
+          <img src="https://raw.githubusercontent.com/Nickson-D-kumar/Portfolio/main/ChatApp%20logo%20with%20vibrant%20icons.png" alt="ChatApp">
+        </div>
+        <div class="pc-content">
+          <span class="pc-num">03</span>
+          <h3>ChatApp<br>WhatsApp Clone</h3>
+          <p>Frontend chat simulation with automated responses.</p>
+          <div class="pc-stack">
+            <span>HTML</span><span>CSS</span><span>JS</span>
+          </div>
+          <div class="pc-links">
+            <a href="https://github.com/Nickson-D-kumar/ChatApp-Whatsapp-Clone" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://nickson-d-kumar.github.io/ChatApp-Whatsapp-Clone/" target="_blank">Live ↗</a>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-  </div>
-<div class="project-card">
-<img src="https://raw.githubusercontent.com/Nickson-D-kumar/Portfolio/main/ChatApp%20logo%20with%20vibrant%20icons.png">
-  <div class="overlay">
-    <h3>ChatApp- WhatsApp clone</h3>
-    <p>A simple WhatsApp-like chat application built using HTML, CSS, and JavaScript.This project focuses on frontend development and simulates real-time chatting with automated responses.</p>
-    <div class="icon-links">
-      <a href="https://github.com/Nickson-D-kumar/ChatApp-Whatsapp-Clone" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-
-      <a href="https://nickson-d-kumar.github.io/ChatApp-Whatsapp-Clone/" target="_blank">
-        <i class="fa-solid fa-arrow-up-right-from-square"></i>
-      </a>
-    </div>
-  </div>
-</div>
-</div>
   </section>
 
-  <!-- Skills -->
+  <!-- ═══ SKILLS ═══ -->
   <section id="skills" class="skills">
-    <h2>Skills & Expertise</h2>
-    <div class="skill-set1">
-    <div class="skill">
-      <p>HTML</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:85%"></div>
+    <div class="skills-mag-grid">
+      <div class="skills-header-card mag-card card-dark">
+        <div class="skills-label">/ Skills</div>
+        <h2>What I<br><em>work with</em></h2>
+        <p>Always learning, always building.</p>
       </div>
-    </div>
-
-    <div class="skill">
-      <p>CSS</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:80%"></div>
+      <div class="skills-dev-card mag-card">
+        <p class="skill-group-title">Development</p>
+        <div class="skill-pills">
+          <span class="skp">HTML <em>85%</em></span>
+          <span class="skp">CSS <em>80%</em></span>
+          <span class="skp">JavaScript <em>49%</em></span>
+          <span class="skp">Bootstrap <em>79%</em></span>
+          <span class="skp">C <em>80%</em></span>
+          <span class="skp">C++ <em>75%</em></span>
+          <span class="skp">Java <em>60%</em></span>
+        </div>
       </div>
-    </div>
-
-    <div class="skill">
-      <p>C</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:80%"></div>
+      <div class="skills-design-card mag-card card-gradient-teal">
+        <p class="skill-group-title light">Design</p>
+        <div class="skill-pills">
+          <span class="skp light">Figma <em>85%</em></span>
+          <span class="skp light">Adobe XD <em>75%</em></span>
+          <span class="skp light">Canva <em>80%</em></span>
+        </div>
       </div>
-    </div>
-
-    <div class="skill">
-      <p>C++</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:75%"></div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <p>Java</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:60%"></div>
-      </div>
-    </div>
-    </div>
-    <div class="skill-set2">
-      <div class="skill">
-      <p>BootStrap</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:79%"></div>
-      </div>
-    </div>
-    <div class="skill">
-      <p>JavaScript</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:49%"></div>
-      </div>
-    </div>
-    
-    <div class="skill">
-      <p>FIGMA</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:85%"></div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <p>ADOBE&nbsp;XD</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:75%"></div>
-      </div>
-    </div>
-
-    <div class="skill">
-      <p>Canva</p>
-      <div class="skill-bar">
-        <div class="skill-fill" style="width:80%"></div>
-      </div>
-    </div>
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- ═══ CONTACT ═══ -->
   <section id="contact" class="contact">
-    <h2>Get In Touch</h2>
-    <div class="contact-container">
-    <div class="forms">
-     <form name="contact" method="POST" data-netlify="true" action="/">
-        <input type="hidden" name="form-name" value="contact">
-<p style="display:none"><label>Don't fill this out :<input name="bot-field"></label></p>
-  <input name="name" type="text" placeholder="Your Name"
-    style="height: 50px; font-size: 15px;" required>
+    <div class="contact-blob cb1"></div>
+    <div class="contact-blob cb2"></div>
 
-  <input name="email" type="email" placeholder="Your Email"
-    style="height: 50px; font-size: 15px;" required>
+    <div class="contact-mag-grid">
+      <div class="contact-left">
+        <div class="contact-label">/ Let's Talk</div>
+        <h2 class="contact-big">Got an idea? <em>Let's build it.</em></h2>
+        <a href="mailto:smsnickson10@gmail.com" class="contact-email">
+          smsnickson10@gmail.com <span>↗</span>
+        </a>
+        <div class="contact-meta">
+          <p><i class="fa-solid fa-phone"></i> +91 9345288967</p>
+          <p><i class="fa-solid fa-location-dot"></i> Thoothukudi, Tamil Nadu</p>
+        </div>
+        <div class="contact-socials">
+          <a href="https://www.linkedin.com/in/nickson-d-kumar/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Nickson-D-kumar" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/master_nickson.007/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://x.com/Nickson_D_kumar" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://www.threads.com/@master_nickson.007" target="_blank"><i class="fa-brands fa-threads"></i></a>
+          <a href="https://www.facebook.com/share/18PHqXwtBK/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
 
-  <textarea name="message" placeholder="Your Message"
-    style="height: 200px; font-size: 15px;" required></textarea>
-
-  <button type="submit" class="btn-primary"
-    style="font-size: 15px; height: 50px;">
-    Send Message
-    <span><i class="fa-solid fa-paper-plane"
-    style="margin-left: 20px;"></i></span>
-  </button>
-</form>
-<p>This site does not store personal data. 
-Messages are used only to respond to inquiries.</p>
-    </div>
-    <div class="contact-info-container">
-    <div class="contact-info">
-      <h3 style="text-align: center; margin-bottom: 20px;">Contact Info</h3>
-      <p><i class="fa-solid fa-phone"></i> +91 9345288967</p>
-      <p><i class="fa-solid fa-envelope"></i> smsnickson10@gmail.com</p>
-      <p><i class="fa-solid fa-location-dot"></i> Thoothukudi, Tamil Nadu</p>
-    </div>
-    <div class="contact-info1">
-      <h3 style="text-align: center; margin-bottom: 20px;">Follow Me</h3>
-      <center>
-      <a href="https://www.linkedin.com/in/nickson-d-kumar/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/Nickson-D-kumar" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a href="https://www.instagram.com/master_nickson.007/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-       <a href="https://www.facebook.com/share/18PHqXwtBK/" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-       <a href="https://x.com/Nickson_D_kumar" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-x-twitter"></i>
-      </a>
-       <a href="https://www.threads.com/@master_nickson.007" target="_blank" rel="noopener noreferrer">
-        <i class="fa-brands fa-threads"></i>
-      </a>
-      </center>
-    </div>
-    </div>
+      <div class="contact-form-card mag-card">
+        <form name="contact" method="POST" data-netlify="true" action="/">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none"><label>Don't fill: <input name="bot-field"></label></p>
+          <div class="cf-row">
+            <div class="cf-field">
+              <label>Name</label>
+              <input name="name" type="text" placeholder="Your name" required>
+            </div>
+            <div class="cf-field">
+              <label>Email</label>
+              <input name="email" type="email" placeholder="your@email.com" required>
+            </div>
+          </div>
+          <div class="cf-field">
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="cf-submit">
+            Send it <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <p>© 2026 Nickson D Kumar. All rights reserved.</p>
+  <footer class="footer">
+    <span>© 2026 Nickson D Kumar. All rights reserved.</span>
+    <span class="footer-made">Made with ♥ &amp; lots of caffeine</span>
+    <a href="#home" class="footer-up">↑ Top</a>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
